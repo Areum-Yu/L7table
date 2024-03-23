@@ -6,27 +6,55 @@
 <body>
 <center>
     <p>Play, Pause and Stop</p><br>
-    <video src="COW.mp4" id="Video" width="500"></video>
+    <!-- <video src="COW.mp4" id="Video" width="400"></video> -->
 
-    <script>
-        function Myvideo(){
+    <!-- <script>
+        function MyVideo(){
             document.getElementById("Video").play();
         }
-        function MyvideoP(){
+        function MyVideoP(){
             document.getElementById("Video").pause();
         }
-        function MyvideoST(){
+        function MyVideoST(){
             document.getElementById("Video").pause();
             document.getElementById("Video").currentTime=0;
         }
 
     </script>
     <br><br>
-    <button onclick="Myvideo">PLAY IT</button>
-    <button onclick="MyvideoP">PAUSE</button>
-    <button onclick="MyvideoST">RESTART</button>
+    <button onClick="MyVideo">PLAY IT</button>
+    <button onClick="MyVideoP">PAUSE</button>
+    <button onClick="MyVideoST">RESTART</button>
 
-    <br><br>
+    <br><br> -->
+
+    <br>
+        <video src="COW.mp4" id="Video" width="400"> </video>
+        <br>
+
+        <script> 
+        function  MyVideo(){
+            document.getElementById("Video").play();
+        }
+
+        function  MyVideoP(){
+            document.getElementById("Video").pause();
+        }
+        
+        function  MyVideoST(){
+            document.getElementById("Video").pause();
+            document.getElementById("Video").currentTime=0;
+        }
+        </script>
+         
+        <br>
+        <button onclick="MyVideo()">PLAY IT</button>
+        <button onclick="MyVideoP()">PAUSE</button>
+        <button onclick="MyVideoST()">RESTART</button>
+        <br>
+
+        <br>
+
     <p>Song-Play, Pause and Stop</p><br>
     <img src="music.jpg" width="400" height="200"></img>
     <audio src="owl.mp3" id="Music"></audio>
@@ -44,16 +72,10 @@
         }
         </script>
 
-        <!-- <br><br>
-        <button onclick="Mymusic">PLAY IT</button>
-        <button onclick="MymusicP">PAUSE</button>
-        <button onclick="MymusicST">RESTART</button>
-        <br><br> -->
-
         <br><br>
-        <button onclick="Mymusic">PLAY IT</button>
-        <button onclick="MymusicP">PAUSE</button>
-        <button onclick="MymusicST">RESTART</button>
+        <button onClick="Mymusic">PLAY IT</button>
+        <button onClick="MymusicP">PAUSE</button>
+        <button onClick="MymusicST">RESTART</button>
 
 </center>
 
