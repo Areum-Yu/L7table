@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+<center>
+    <p>Play, Pause and Stop</p><br>
+    <video src="COW.mp4" id="Video" width="500"></video>
+
+    <script>
+        function Myvideo(){
+            document.getElementById("Video").play();
+        }
+        function MyvideoP(){
+            document.getElementById("Video").pause();
+        }
+        function MyvideoST(){
+            document.getElementById("Video").pause();
+            document.getElementById("Video").currentTime=0;
+        }
+
+    </script>
+    <br><br>
+    <button onclick="Myvideo">PLAY IT</button>
+    <button onclick="MyvideoP">PAUSE</button>
+    <button onclick="MyvideoST">RESTART</button>
+
+    <br><br>
+    <p>Song-Play, Pause and Stop</p><br>
+    <img src="music.jpg" width="400" height="200"></img>
+    <audio src="owl.mp3" id="Music"></audio>
+
+        <script>
+        function Mymusic(){
+            document.getElementById("Music").play();
+        }
+        function MymusicP(){
+            document.getElementById("Music").pause();
+        }
+        function MymusicST(){
+            document.getElementById("Music").pause();
+            document.getElementById("Music").currentTime=0;
+        }
+        </script>
+
+        <!-- <br><br>
+        <button onclick="Mymusic">PLAY IT</button>
+        <button onclick="MymusicP">PAUSE</button>
+        <button onclick="MymusicST">RESTART</button>
+        <br><br> -->
+
+        <br><br>
+        <button onclick="Mymusic">PLAY IT</button>
+        <button onclick="MymusicP">PAUSE</button>
+        <button onclick="MymusicST">RESTART</button>
+
+</center>
+
+
+</body>
+</html>
